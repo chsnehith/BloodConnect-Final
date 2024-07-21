@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="Needblood.css">
+    <title>Need Blood</title>
+</head>
+<body>
+    <h1>Need Blood</h1>
+    <h3>Observe the below table and send the requests according the blood group needed</h3>
+    <div class='col-sm-6' align="center" style="font-size: 1.5rem;">
+        <table class="maintable table-responsive">
+            <tbody>
+                <tr>
+                    <th colspan="3" style='color:white;background-color:rgb(14, 13, 13);'>Compatible Blood Type Donors</th>
+                </tr>
+                <tr>
+                    <td><b>Blood Type</b></td>
+                    <td><b>Donate Blood To</b></td>
+                    <td><b>Receive Blood From</b></td>
+                </tr>
+                <tr>
+                    <td><span style="color: #961e1b;"><b>A+</b></span></td>
+                    <td>A+ AB+</td>
+                    <td>A+ A- O+ O-</td>
+                </tr>
+                <tr>
+                    <td><span style="color: #961e1b;"><b>O+</b></span></td>
+                    <td>O+ A+ B+ AB+</td>
+                    <td>O+ O-</td>
+                </tr>
+                <tr>
+                    <td><span style="color: #961e1b;"><b>B+</b></span></td>
+                    <td>B+ AB+</td>
+                    <td>B+ B- O+ O-</td>
+                </tr>
+                <tr>
+                    <td><span style="color: #961e1b;"><b>AB+</b></span></td>
+                    <td>AB+</td>
+                    <td>Everyone</td>
+                </tr>
+                <tr>
+                    <td><span style="color: #961e1b;"><b>A-</b></span></td>
+                    <td>A+ A- AB+ AB-</td>
+                    <td>A- O-</td>
+                </tr>
+                <tr>
+                    <td><span style="color: #961e1b;"><b>O-</b></span></td>
+                    <td>Everyone</td>
+                    <td>O-</td>
+                </tr>
+                <tr>
+                    <td><span style="color: #961e1b;"><b>B-</b></span></td>
+                    <td>B+ B- AB+ AB-</td>
+                    <td>B- O-</td>
+                </tr>
+                <tr>
+                    <td><span style="color: #961e1b;"><b>AB-</b></span></td>
+                    <td>AB+ AB-</td>
+                    <td>AB- A- B- O-</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="box" onclick="toggleDropdown('A+')">A+</div>
+    <div class="dropdown" id="A+">
+        <table>
+            <tr>
+                <th>Name</th>
+            </tr>
+            <% data.forEach(apost => { %>
+                <tr>
+                    <td><%= apost.name %></td>
+                </tr>
+            <% }) %>
+            
+        </table>
+        
+    </div>
+
+    <div class="box" onclick="toggleDropdown('A-')">A-</div>
+    <div class="dropdown" id="A-">
+        <table>
+            <tr>
+                <th>Name</th>
+            </tr>
+            <% data1.forEach(apost => { %>
+                <tr>
+                    <td><%= apost.name %></td>
+                </tr>
+            <% }) %>
+        </table>
+    </div>
+    <div class="box" onclick="toggleDropdown('B+')">B+</div>
+    <div class="dropdown" id="B+">
+        <table>
+            <tr>
+                <th>Name</th>
+            </tr>
+            <% data2.forEach(apost => { %>
+                <tr>
+                    <td><%= apost.name %></td>
+                </tr>
+            <% }) %>
+        </table>
+        
+    </div>
+    <div class="box" onclick="toggleDropdown('B-')">B-</div>
+    <div class="dropdown" id="B-">
+        <table>
+            <tr>
+                <th>Name</th>
+            </tr>
+            <% data3.forEach(apost => { %>
+                <tr>
+                    <td><%= apost.name %></td>
+                </tr>
+            <% }) %>
+        </table>
+        
+    </div>
+    <div class="box" onclick="toggleDropdown('AB+')">AB+</div>
+    <div class="dropdown" id="AB+">
+        <table>
+            <tr>
+                <th>Name</th>
+            </tr>
+            <% data4.forEach(apost => { %>
+                <tr>
+                    <td><%= apost.name %></td>
+                </tr>
+            <% }) %>
+        </table>
+        
+    </div>
+    <div class="box" onclick="toggleDropdown('AB-')">AB-</div>
+    <div class="dropdown" id="AB-">
+        <table>
+            <tr>
+                <th>Name</th>
+            </tr>
+            <% data5.forEach(apost => { %>
+                <tr>
+                    <td><%= apost.name %></td>
+                </tr>
+            <% }) %>
+        </table>
+        
+    </div>
+    
+    <div class="box" onclick="toggleDropdown('O-')">O-</div>
+    <div class="dropdown" id="O-">
+        <table>
+            <tr>
+                <th>Name</th>
+            </tr>
+            <% data6.forEach(apost => { %>
+                <tr>
+                    <td><%= apost.name %></td>
+                </tr>
+            <% }) %>
+        </table>
+        
+    </div>
+    <div class="box" onclick="toggleDropdown('O+')">O+</div>
+    <div class="dropdown" id="O+">
+        <table>
+            <tr>
+                <th>Name</th>
+            </tr>
+            <% data7.forEach(apost => { %>
+                <tr>
+                    <td><%= apost.name %></td>
+                </tr>
+            <% }) %>
+        </table>
+        
+    </div>
+    <h3>Fill this form to Send requests</h3>
+<form action="/send-request"  method="POST">
+    <h5>Name:</h5>
+    <input type="text" name="name" placeholder="Enter your name" required>
+    <h5>Contact no:</h5>
+    <input type="number" name="contact" placeholder="your phone number" style="text-decoration: none;" required>
+    <h5>Blood Group</h5>
+    <select name="bloodGroup" required>
+        <option value="" disabled selected>Select your blood group</option>
+        <option value="A+">A+ve</option>
+        <option value="B+">B+ve</option>
+        <option value="O+">O+ve</option>
+        <option value="AB+">AB+ve</option>
+        <option value="A-">A-ve</option>
+        <option value="B-">B-ve</option>
+        <option value="O-">O-ve</option>
+        <option value="AB-">AB-ve</option>
+    </select>
+    <h5>Address</h5>
+    <input type="text" name="address" placeholder="Eg:arudanti hospital,Gandimaisama,Hyderabad,Telangana" required>
+    <button type="submit">Submit</button>
+</form>
+
+    <script>
+        function toggleDropdown(id) {
+            var dropdown = document.getElementById(id);
+            if (dropdown.style.display === "none" || dropdown.style.display === "") {
+                dropdown.style.display = "block";
+            } else {
+                dropdown.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
