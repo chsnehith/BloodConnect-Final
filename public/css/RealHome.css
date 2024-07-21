@@ -1,0 +1,257 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background: #0e0e0e;
+    padding: 20px 0;
+    color: #fff;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .logo-home {
+    display: flex;
+    align-items: center;
+  }
+  
+  .home-link i {
+    color: #fff;
+    margin-right: 3px;
+    margin-left: 5px;
+  }
+  
+  .home-link a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: 30px;
+  }
+  
+  .logo img {
+    max-width: 150px;
+    height: 50px;
+    border-radius: 70px;
+  }
+  
+  .right-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #f1c40f;
+  }
+  
+  .donate-btn a {
+    background: #f1c40f;
+    color: #961e1b;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .donate-btn a:hover {
+    background: #fff;
+    color: #481e1e;
+  }
+  
+  
+  .services {
+      background: #fff;
+      padding: 60px 20px;
+      text-align: center; 
+  }
+  
+  
+  
+  .services h1 {
+      text-align: center;
+      color: #0e0d0d;
+      margin-bottom: 40px;
+      font-size: 3rem;
+  }
+  
+  .services-grid {
+      display: flex; 
+      justify-content: space-between; 
+      flex-wrap: wrap; 
+  }
+  
+  .service-item {
+      flex: 1 1 300px; 
+      background: #f8f9fa;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px; 
+      margin-right: 10px;
+  }
+  
+  .service-item img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+      border-radius: 8px;
+  }
+  
+  .service-item h3 {
+      color: #961e1b;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+  }
+  
+  blockquote {
+      background: #f8f9fa;
+      padding: 20px;
+      border-left: 5px solid #961e1b;
+      font-style: italic;
+  }
+  
+  blockquote p {
+      margin: 0;
+  }
+  
+  table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+  }
+  
+  table th, table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+  }
+  
+  table th {
+      background-color: #961e1b;
+      color: white;
+  }
+  
+  table td span {
+      color: #961e1b;
+      font-weight: bold;
+  }
+  
+  footer {
+      background-color: #0f0f0f;
+      color: #fff;
+      padding: 40px 0;
+  }
+  
+  .footer-container {
+      width: 80%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  }
+  
+  .footer-logo {
+      width: 25%;
+      margin-bottom: 20px;
+  }
+  
+  .footer-logo img {
+      width: 150px;
+      height: 70px;
+      border-radius: 70px 70px 70px 70px;
+      margin-bottom: 10px;
+  }
+  
+  .footer-logo p {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+  }
+  
+  .footer-logo address {
+      font-style: normal;
+      line-height: 1.6;
+      margin-bottom: 20px;
+  }
+  
+  .social-icons a {
+      margin-right: 10px;
+  }
+  
+  .social-icons img {
+      width: 24px;
+      height: 20px;
+  }
+  
+  .footer-links {
+      display: flex;
+      justify-content: space-between;
+      width: 70%;
+      flex-wrap: wrap;
+  }
+  
+  .footer-links ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 20px 20px 0;
+      width: 200px;
+  }
+  
+  .footer-links li {
+      margin-bottom: 10px;
+      cursor: pointer;
+      color: #ccc;
+      font-size: 16px;
+      transition: color 0.3s ease;
+  }
+  
+  .footer-links li:hover {
+      color: #ffcc00;
+  }
+  .pimage{
+      height:70%;
+      width: 80%;
+  }
+  
+  .service-item:hover{
+      box-shadow: 3px 3px 10px  black;
+      border-radius: 15px 15px;
+  }
+  table:hover{
+      box-shadow: 3px 3px 10px  black;
+      border-radius: 15px 15px;
+  }
+  .home-link a:hover{
+      color: #ffcc00;
+  }
+  i{
+      margin-left: 35px;
+      height: 15px;
+      
+  }

@@ -1,0 +1,69 @@
+body{
+    height: 100vh;
+    margin: 0;
+    background-image: url(bkimage.jpg.webp);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;/**this makes the html elements in the middle of the from top to bottom**/
+    justify-content: center;/** this makes the html elemnts in the middle of the page from right and left**/
+}
+
+.form {
+    transform: translateX(100px); 
+}
+form{
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form h5{
+    color: white;
+    margin-bottom: 10px;
+}
+form input{
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+form button{
+    width: 40%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: #0056b3;
+
+}
+h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+h1{
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px;
+}
+form a{
+    color: white;
+    text-decoration:underline;
+    padding-left: 20px;
+}
+
+form input:hover{
+    box-shadow: 2px 2px 2px 2px white;
+}
